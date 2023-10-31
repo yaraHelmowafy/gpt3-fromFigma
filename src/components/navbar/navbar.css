@@ -1,0 +1,135 @@
+.chatAI__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.chatAI__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chatAI__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.chatAI__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.chatAI__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.chatAI__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chatAI__navbar-links_container p,
+.chatAI__navbar-sign p,
+.chatAI__navbar-menu_container p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.chatAI__navbar-sign button,
+.chatAI__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #FF4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chatAI__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.chatAI__navbar-menu svg {
+    cursor: pointer;
+}
+
+.chatAI__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.chatAI__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.chatAI__navbar-menu_container-links-sign {
+    display: none;
+}
+/* for tablets */
+
+@media screen and (max-width: 1050px) {
+    .chatAI__navbar-links_container {
+        display: none;
+    }
+
+    .chatAI__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .chatAI__navbar {
+        padding: 2rem 4rem;
+    }
+}
+/* for mobile */
+@media screen and (max-width: 550px) {
+    .chatAI__navbar {
+        padding: 2rem;
+    }
+
+    .chatAI__navbar-sign {
+        display: none;
+    }
+
+    .chatAI__navbar-menu_container {
+        top: 20px;
+    }
+
+    .chatAI__navbar-menu_container-links-sign {
+        display: block;
+    }
+}
